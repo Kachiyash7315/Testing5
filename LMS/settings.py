@@ -66,8 +66,9 @@ TEMPLATES = [
         },
     },
 ]
-KEY_ID = "rzp_test_fuh3qUtPzj1EcF"
-KEY_SECRET = "M6wfTl2GQ4nXSaaBV30UPTqq"
+KEY_ID = os.getenv("KEY_ID")
+KEY_SECRET = os.getenv("KEY_SECRET")
+
 
 WSGI_APPLICATION = 'LMS.wsgi.application'
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
@@ -118,16 +119,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-KEY_ID = ""
-KEY_SECRET = ""
 STATIC_URL = '/static/'
 STATIC_ROOT = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
-
-KEY_ID = "rzp_test_fuh3qUtPzj1EcF"
-KEY_SECRET = "M6wfTl2GQ4nXSaaBV30UPTqq"
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'login'
