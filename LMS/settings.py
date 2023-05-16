@@ -24,7 +24,7 @@ SECRET_KEY = 'ipq)fai2on1-q3hsok9k7=403qai2pr&wedg-_5p-uq1f@%617'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
