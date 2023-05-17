@@ -7,7 +7,7 @@ import razorpay
 from django.views.decorators.csrf import csrf_exempt
 
 from .settings import *
-from . .env import *
+from . import *
 client = razorpay.Client(auth=(KEY_ID, KEY_SECRET))
 
 from django.db.models import Sum
