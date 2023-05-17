@@ -125,6 +125,9 @@ STATIC_ROOT = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+CSRF_TRUSTED_ORIGINS = [
+    'https://web-production-1c5f.up.railway.app',
+]
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'login'
@@ -132,7 +135,6 @@ LOGOUT_REDIRECT_URL = 'login'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'yash_kachi@moderncoe.edu.in'
-EMAIL_HOST_PASSWORD = 'Archana7315'
+
 
 
