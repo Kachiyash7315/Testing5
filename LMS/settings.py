@@ -126,7 +126,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 CSRF_TRUSTED_ORIGINS = [
-    'https://web-production-1c5f.up.railway.app',
+    'https://web-production-ff88c.up.railway.app',
 ]
 
 LOGIN_REDIRECT_URL = 'home'
